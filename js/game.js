@@ -58,8 +58,9 @@ class Game{
   
                     textSize(30)
                     fill("black")
-                   
+                   if(player.name!==null){
                          text(""+player.name,M-30,y+21)
+                   }
 fill("red")
 text("Player 1: "+allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,20,30);
 text("Player 2: "+allPlayers.player2.name + "'s Score:" + allPlayers.player2.score, 20, 60);
