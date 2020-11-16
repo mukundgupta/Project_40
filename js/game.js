@@ -93,7 +93,7 @@ text("Player 2: "+allPlayers.player2.name + "'s Score:" + allPlayers.player2.sco
                      
                  }
                  
-                  if (player.index !== null) {
+                  if (player.index !== null&&player.name!==null) {
                       for(var i = 0; i< fruitGroup.length;i++){
                           if(fruitGroup.get(i).isTouching(players)){
                             fruitGroup.get(i).destroy();
